@@ -887,7 +887,19 @@ textarea {
 
 /* PORTFOLIO */
 /* PROJECTS */
-.btn-projects {
+.filter {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: calc(-1 * var(--filter-gap));
+}
+.filter__item {
+  margin-left: var(--filter-gap);
+  margin-bottom: 50px;
+}
+.filter__btn-projects {
   padding: 6px 22px;
   font-family: "Roboto";
   font-weight: 500;
@@ -900,26 +912,14 @@ textarea {
   transition: background 250ms var(--cubic-bezier),
     color 250ms var(--cubic-bezier);
 }
-.btn-projects:hover,
-.btn-projects:focus {
+.filter__btn-projects:hover,
+.filter__btn-projects:focus {
   background: var(--web-hover-fokus);
   box-shadow: 0px 3px 1px var(--btn-p-box-shadow-one),
     0px 1px 2px var(--btn-p-box-shadow-two),
     0px 2px 2px var(--team-bth-p-box-shadow);
   border-radius: 4px;
   color: var(--hero-footer);
-}
-.filter {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  margin-left: calc(-1 * var(--filter-gap));
-}
-.filter-item {
-  margin-left: var(--filter-gap);
-  margin-bottom: 50px;
 }
 
 .portfolio {
@@ -932,18 +932,18 @@ textarea {
   margin-bottom: calc(-1 * var(--ul-class-gap));
 }
 
-.portfolio-item {
+.portfolio__item {
   flex-basis: calc(100% / 3 - var(--ul-class-gap));
   margin-left: var(--ul-class-gap);
   margin-bottom: var(--ul-class-gap);
   align-content: center;
 }
-.portfolio-link {
+.portfolio__link {
   display: block;
   transition: box-shadow 250ms var(--cubic-bezier);
 }
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio__link:hover,
+.portfolio__link:focus {
   box-shadow: 0px 1px 1px var(--team-bth-p-box-shadow),
     0px 4px 4px var(--portfolio-item-hover06),
     1px 4px 6px var(--portfolio-item-hover16);
@@ -954,7 +954,7 @@ textarea {
   border-bottom: 1px solid var(--headline-border-bottom);
   border-left: 1px solid var(--headline-border-bottom);
 }
-.projects-head {
+.portfolio-card__head {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -962,7 +962,7 @@ textarea {
   color: var(--text-color);
   margin-bottom: 4px;
 }
-.projects-text {
+.portfolio-card__text {
   font-size: 16px;
   line-height: 1.88;
   color: var(--additional-text);
@@ -971,11 +971,6 @@ textarea {
 .overlay-tumb {
   position: relative;
   overflow: hidden;
-}
-.overlay-text {
-  font-size: 18px;
-  line-height: 1.56;
-  color: var(--hero-footer);
 }
 .overlay-box {
   position: absolute;
@@ -990,8 +985,13 @@ textarea {
   transition: transform 250ms var(--cubic-bezier),
     opacity 250ms var(--cubic-bezier);
 }
-.portfolio-link:hover .overlay-box,
-.portfolio-link:focus .overlay-box {
+.overlay-box__text {
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--hero-footer);
+}
+.portfolio__link:hover .overlay-box,
+.portfolio__link:focus .overlay-box {
   transform: translateY(0);
   opacity: 1;
 }
