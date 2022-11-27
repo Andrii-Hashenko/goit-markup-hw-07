@@ -398,7 +398,7 @@ address {
 }
 
 /* clients */
-.clients-title {
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -414,13 +414,13 @@ address {
   justify-content: center;
   margin-left: calc(-1 * var(--ul-class-gap));
 }
-.clients-item {
+.clients-list__item {
   flex-basis: calc(100% / 6 - var(--ul-class-gap));
   margin-left: var(--ul-class-gap);
   box-sizing: border-box;
   justify-content: center;
 }
-.clients-list .clients-link {
+.clients-list__link {
   display: flex;
   padding: 15px 31px;
   justify-content: center;
@@ -429,17 +429,17 @@ address {
   border-radius: 4px;
   transition: border 250ms var(--cubic-bezier);
 }
-.clients-link:hover,
-.clients-link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
   fill: var(--web-hover-fokus);
   border: 1px solid var(--web-hover-fokus);
   border-radius: 4px;
 }
-.clients-link:hover .svg-icon,
-.clients-link:focus .svg-icon {
+.clients-list__link:hover .svg-icon,
+.clients-list__link:focus .svg-icon {
   fill: var(--web-hover-fokus);
 }
-.clients-link .svg-icon {
+.clients-list__link .svg-icon {
   fill: var(--social-link-icon);
   transition: fill 250ms var(--cubic-bezier);
 }
