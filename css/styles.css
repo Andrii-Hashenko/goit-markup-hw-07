@@ -207,7 +207,6 @@ address {
   background-size: cover;
   background-position: center;
 }
-
 .hero__title {
   font-weight: 900;
   font-size: 44px;
@@ -246,19 +245,18 @@ address {
   list-style: none;
   margin-left: calc(-1 * var(--ul-class-gap));
 }
-.offer-icon {
+.offer__item {
+  flex-basis: calc(100% / 4 - var(--ul-class-gap));
+  margin-left: var(--ul-class-gap);
+}
+.offer__icon {
   justify-content: center;
   background: var(--team-background);
   border-radius: 4px;
   padding: 25px 100px;
   margin-bottom: 55px;
 }
-.offer-item {
-  flex-basis: calc(100% / 4 - var(--ul-class-gap));
-  margin-left: var(--ul-class-gap);
-}
-
-.offer-title {
+.offer__title {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.14;
@@ -266,7 +264,7 @@ address {
   color: var(--text-color);
   margin-bottom: 10px;
 }
-.offer-text {
+.offer__text {
   line-height: 1.71;
   color: var(--additional-text);
 }
@@ -275,7 +273,7 @@ address {
 .job {
   padding-top: 0;
 }
-.job-title {
+.job__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -291,14 +289,14 @@ address {
   list-style: none;
   margin-left: calc(-1 * var(--ul-class-gap));
 }
-.job-box li {
+.job-box__item {
   flex-basis: calc(100% / 3 - var(--ul-class-gap));
   margin-left: var(--ul-class-gap);
 }
 .job-img {
   position: relative;
 }
-.img-text {
+.job-img__text {
   font-weight: 700;
   line-height: 1.14;
   text-align: center;
