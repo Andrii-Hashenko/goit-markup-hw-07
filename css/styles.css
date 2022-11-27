@@ -168,16 +168,11 @@ address {
   margin-right: 10px;
   transition: fill 250ms var(--cubic-bezier);
 }
-.contacts-head__mailto:hover .svg-icon,
-.contacts-head__mailto:focus .svg-icon {
+.contacts-head__contact:hover .svg-icon,
+.contacts-head__contact:focus .svg-icon {
   fill: var(--web-hover-fokus);
 }
-.contacts-head__tel:hover .svg-icon,
-.contacts-head__tel:focus .svg-icon {
-  fill: var(--web-hover-fokus);
-}
-
-.contacts-head__mailto {
+.contacts-head__contact {
   display: flex;
   align-self: center;
   align-items: center;
@@ -188,23 +183,8 @@ address {
   padding: 32px 0;
   transition: color 250ms var(--cubic-bezier);
 }
-.contacts-head__mailto:hover,
-.contacts-head__mailto:focus {
-  color: var(--web-hover-fokus);
-}
-.contacts-head__tel {
-  display: flex;
-  align-self: center;
-  align-items: center;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--additional-text);
-  padding: 32px 0;
-  transition: color 250ms var(--cubic-bezier);
-}
-.contacts-head__tel:hover,
-.contacts-head__tel:focus {
+.contacts-head__contact:hover,
+.contacts-head__contact:focus {
   color: var(--web-hover-fokus);
 }
 .page-head {
@@ -228,7 +208,7 @@ address {
   background-position: center;
 }
 
-.title-hero {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -237,7 +217,7 @@ address {
   color: var(--hero-footer);
   margin-bottom: 30px;
 }
-.caption-btn {
+.hero__btn {
   padding: 10px 32px;
   font-family: "Roboto";
   font-weight: 700;
@@ -253,8 +233,8 @@ address {
   transition: opacity 250ms var(--cubic-bezier),
     background 250ms var(--cubic-bezier), visibility 250ms var(--cubic-bezier);
 }
-.caption-btn:hover,
-.caption-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background: var(--web-hover-fokus);
 }
 
