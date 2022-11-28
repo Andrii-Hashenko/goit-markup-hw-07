@@ -944,7 +944,6 @@ textarea {
   border-bottom: 1px solid var(--headline-border-bottom);
   border-left: 1px solid var(--headline-border-bottom);
 }
-
 .portfolio-card__head {
   font-weight: 700;
   font-size: 18px;
@@ -953,7 +952,6 @@ textarea {
   color: var(--text-color);
   margin-bottom: 4px;
 }
-
 .portfolio-card__text {
   font-size: 16px;
   line-height: 1.88;
@@ -978,7 +976,6 @@ textarea {
   opacity: 0;
   transition: transform 250ms var(--cubic-bezier), opacity 250ms var(--cubic-bezier);
 }
-
 .overlay-box__text {
   font-size: 18px;
   line-height: 1.56;
