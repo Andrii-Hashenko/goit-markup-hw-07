@@ -1,13 +1,13 @@
 .logo {
-    font-family: "Raleway";
+    font-family: $secondary-font;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: var(--color-logo-hed);
+    color: $color-logo-hed;
     margin-right: 93px;
   }
   .logo-web {
-    color: var(--web-hover-fokus);
+    color: $web-hover-fokus;
   }
   .nav-logo {
     display: flex;
